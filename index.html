@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social App</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <script src="https://kit.fontawesome.com/6c675f6dcf.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <img src="./image/logo.png" class="logo" alt="">
+            <ul>
+                <li><img src="./image/notification.png"  alt=""></li>
+                <li><img src="./image/inbox.png"  alt=""></li>
+                <li><img src="./image/video.png"  alt=""></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="./image/search.png" alt="">
+                <input type="text" placeholder="Search"  name="" id="">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="./image/profile-a.jpg" alt="">
+            </div>
+        </div>
+        <div class="settings-menu">
+
+            <div id="dark-btn" >
+                <span></span>
+            </div>
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="./image/profile-a.jpg" alt="">
+                    <div>
+                        <p>Thành Danh</p>
+                        <small>See your profile <i class="fa-solid fa-caret-down"></i></small>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="./image/feedback.png" alt="">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us to improve the new design</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="settings-links">
+                    <img src="./image/setting.png" class="settings-icon">
+                    <a href="#">Settings & Privacy <img src="./image/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="./image/help.png" class="settings-icon">
+                    <a href="#">Help & Support <img src="./image/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="./image/display.png" class="settings-icon">
+                    <a href="#">Display & Accessibility <img src="./image/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="./image/logout.png" class="settings-icon">
+                    <a href="#">Logout <img src="./image/arrow.png" width="10px"></a>
+                </div>
+            </div>
+            
+        </div>
+    </nav>
+    <div class="container">
+        <!-- ------------Left-sidebar---------------- -->
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"><img src="./image/news.png" alt="">Latest News</a>
+                <a href="#"><img src="./image/friends.png" alt="">Friends</a>
+                <a href="#"><img src="./image/group.png" alt="">Group</a>
+                <a href="#"><img src="./image/memory.png" alt="">Memory</a>
+                <a href="#"><img src="./image/marketplace.png" alt="">Marketplace</a>
+                <a href="#"><img src="./image/watch.png" alt="">Watch</a>
+                <a href="#">See More</a>
+            </div>
+            <div class="shortcut-links">
+                <p>Your Shortcuts</p>
+                <a href="#"><img src="./image/shortcut-1.png" alt="">Cộng đồng UI/UX Design VietNam</a>
+                <a href="#"><img src="./image/shortcut-2.png" alt="">Học lập trình web (F8 - Fullsatck.edu.vn)</a>
+                <a href="#"><img src="./image/shortcut-3.png" alt="">Học viện thiết kế đồ họa </a>
+                <a href="#"><img src="./image/shortcut-4.png" alt="">Front-end Web Developer</a>
+            </div>
+        </div>
+        <!-- ------------Main-content---------------- -->
+        <div class="main-content">
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="./image/upload.png" alt="">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story2">
+                    <img src="./image/member-1.png" alt="">
+                    <p>Alison</p>
+                </div>
+                <div class="story story3">
+                    <img src="./image/member-2.png" alt="">
+                    <p>Jackson</p>
+                </div>
+                <div class="story story4">
+                    <img src="./image/member-3.png" alt="">
+                    <p>Samona</p>
+                </div>
+                <div class="story story5">
+                    <img src="./image/member-4.png" alt="">
+                    <p>John Doe</p>
+                </div>
+            </div>
+
+
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="./image/profile-a.jpg" alt="">
+                    <div>
+                        <p>Thành Danh</p>
+                        <small>Public <i class="fa-solid fa-caret-down"></i></small>
+                    </div>
+                </div>
+                <div class="post-input-container">
+                    <input rows="3"  placeholder="What's on your mind, Danh?">       
+                    </input>
+                    <div class="add-post-link">
+                        <a href="#"><img src="./image/live-video.png">Live Video</a>
+                        <a href="#"><img src="./image/photo.png">Photo Video</a>
+                        <a href="#"><img src="./image/feeling.png">Feeling/Activity</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="./image/bongda24h.jpg" alt="">
+                        <div>
+                            <p>Bóng đá 24h</p>
+                            <span>June 24 2022, 13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                </div>
+                
+                <p class="post-text">CHÚC MỪNG REAL MADRID VÔ ĐỊCH CHAMPIONS LEAGUE LẦN THỨ 15 🐧<br>
+                    ✍ Jorge Picón (Relevo)
+                    Jude Bellingham muốn gia nhập Real Madrid vào mùa giải tới và tiền vệ người Anh tin rằng Los Blancos chính là bến đỗ phù hợp nhất với bản thân. <br>
+                    Bellingham hiểu rằng Toni Kroos và Luka Modrić đang ở gần với điểm kết trong sự nghiệp của họ và tin rằng bản thân cậu sẵn sàng trở thành một mảnh ghép quan trọng trong thế hệ mới cùng với những Aurélien Tchouaméni, Eduardo Camavinga và Federico Valverde.
+                    BLĐ Real Madrid cũng yêu cầu Bellingham không gia hạn với Dortmund ❌ <br>
+                    Về phía Dortmund, đội bóng nước Đức ban đầu hét giá bán Bellingham lên tới £130M. Nhưng theo The Sun, Dortmund sẵn sàng giảm xuống còn £83M nếu được thanh toán phí trong 1 lần. <br>
+                    Ⓒ RFCVN
+                     <a href="#">#bongda24h</a></p>
+                <img src="./image/realmarid.jpg" class="post-img" alt="">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div>
+                            <img src="./image/like-blue.png" alt="">
+                            1,2k
+                        </div>
+                        <div>
+                            <img src="./image/comments.png" alt="">
+                            901
+                        </div>
+                        <div>
+                            <img src="./image/share.png" alt="">
+                            324
+                        </div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="./image/profile-a.jpg" alt="">
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="./image/whysoserious.jpg" alt="">
+                        <div>
+                            <p>Why So Serious </p>
+                            <span>June 24 2022, 13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                </div>
+                
+                <p class="post-text">“Từ lúc con trai chào đời, mọi người trong nhà đã liên tục nhắc nhở em chó của tôi không được lại gần em bé, đặc biệt là không được trèo lên giường lúc em đang nằm. Có lẽ mọi người vẫn có suy nghĩ là thú cưng không sạch sẽ, có thể mang bệnh cho trẻ sơ sinh, dù em chó nhà tôi cũng được tắm rửa kỹ lưỡng và tỉa lông định kỳ. <br>
+                    Tuy nhiên, em chó lại rất thích em bé, dù không được lại gần nhưng vẫn luôn dõi mắt theo nhất cử nhất động của em, còn rất thích nhìn em bé ngủ. 
+                    Hôm nay tôi vào phòng vệ sinh một lúc, quay ra thì nhìn thấy cảnh này, chả hiểu sao nước mắt lại tự nhiên chảy ra. Vừa đau lòng vừa cảm động. Nó quý em bé, nhưng chỉ dám nằm ở mé như thế kia để được gần em hơn một chút. Hẳn là nó đã thấy rất buồn, dù không biết nói, nhưng nó vẫn hiểu tại sao mọi người lại cấm đoán nó như vậ<y class="br"></y>
+                    “Em bé lắm lông” của tôi, thực sự cảm thấy đã có lỗi với em nhiều lắm 🥺.” <br>
+                    Cre: 小小磨菇 via Weibo Việt Nam</p>
+                <img src="./image/whysoserious-img.jpg" class="post-img" alt="">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div>
+                            <img src="./image/like-blue.png" alt="">
+                            1,2k
+                        </div>
+                        <div>
+                            <img src="./image/comments.png" alt="">
+                            901
+                        </div>
+                        <div>
+                            <img src="./image/share.png" alt="">
+                            324
+                        </div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="./image/profile-a.jpg" alt="">
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="./image/profile-a.jpg" alt="">
+                        <div>
+                            <p>Thành Danh</p>
+                            <span>June 24 2022, 13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                </div>
+                
+                <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga officiis tenetur in incidunt excepturi quasi? A reiciendis explicabo aperiam voluptate, voluptates expedita iure labore rerum at esse facilis? Illum, quisquam. <a href="#">#Easy Tutorials</a><a href="#">#YouTubeChannel</a></p>
+                <img src="./image/feed-image-3.png" class="post-img" alt="">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div>
+                            <img src="./image/like-blue.png" alt="">
+                            1,2k
+                        </div>
+                        <div>
+                            <img src="./image/comments.png" alt="">
+                            901
+                        </div>
+                        <div>
+                            <img src="./image/share.png" alt="">
+                            324
+                        </div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="./image/profile-a.jpg" alt="">
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="./image/profile-a.jpg" alt="">
+                        <div>
+                            <p>Thành Danh</p>
+                            <span>June 24 2022, 13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                </div>
+                
+                <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga officiis tenetur in incidunt excepturi quasi? A reiciendis explicabo aperiam voluptate, voluptates expedita iure labore rerum at esse facilis? Illum, quisquam. <a href="#">#Easy Tutorials</a><a href="#">#YouTubeChannel</a></p>
+                <img src="./image/feed-image-4.png" class="post-img" alt="">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div>
+                            <img src="./image/like-blue.png" alt="">
+                            1,2k
+                        </div>
+                        <div>
+                            <img src="./image/comments.png" alt="">
+                            901
+                        </div>
+                        <div>
+                            <img src="./image/share.png" alt="">
+                            324
+                        </div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="./image/profile-a.jpg" alt="">
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="load-more-btn">
+                Load More
+            </button>
+        </div>
+        <!-- ------------Right-sidebar---------------- -->
+        <div class="right-sidebar">
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>18</h3>
+                    <span>March</span>
+                </div>
+                <div class="right-event">
+                    <h4>Social Media</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> Willson Tech Park</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>22</h3>
+                    <span>June</span>
+                </div>
+                <div class="right-event">
+                    <h4>Mobile Marketing</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> Willson Tech Park</p>
+                    <a href="#">More Info</a>
+                </div>
+               
+            </div>
+            <div class="sidebar-title">
+                <h4>Advertisement</h4>
+                <a href="#">Close</a>
+            </div>
+            <img src="./image/advertisement.png" class="sidebar-avs">
+            <div class="sidebar-title">
+                <h4>Conversation</h4>
+                <a href="#">Hide Chat</a>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="./image/tung.jpg" alt="">
+                </div>
+                <p>Võ Bá Tùng</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="./image/profile-abjpg.jpg">
+                </div>
+                <p>Thư Thư</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="./image/nganphan.jpg" alt="">
+                </div>
+                <p>Ngân Phan</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="./image/mydung.jpg" alt="">
+                </div>
+                <p>Mỹ Dung</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="./image/kieutrinh.jpg" alt="">
+                </div>
+                <p>Kiều Trinh</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="./image/Lamle.jpg" alt="">
+                </div>
+                <p>Lâm Lê</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="./image/xuanthuy.jpg" alt="">
+                </div>
+                <p>Trịnh Xuân Thủy</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="./image/duong.jpg" alt="">
+                </div>
+                <p>Đỗ Dương</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="./image/hohieu.jpg" alt="">
+                </div>
+                <p>Hồ Minh Hiếu</p>
+            </div>
+
+        </div> 
+    </div>
+    <div class="footer">
+        <p>Copyright 2022 - Easy Tutorials Youtube Channel</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
